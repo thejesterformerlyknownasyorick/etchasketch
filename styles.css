@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    align-items: center;
+
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container>div {
+    width: 40px;
+    height:40px;
+    border: 1px dotted black;
+}
+
+.container>div:nth-child(17n+1) {
+    width: 100%;
+    border: 0;
+    height: 0;
+}
+
+.hover {
+    background-color: black;
+    transition:none 0.5s;
+}
+
+.leave {
+    background-color: white;
+    transition:all 0.5s;
+    transition-delay: 2s;
+}
